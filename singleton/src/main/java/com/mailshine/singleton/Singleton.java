@@ -6,7 +6,9 @@ public class Singleton {
 
     private String value;
 
-    private Singleton(){}
+    private Singleton(){
+        setValue("Initial Message");
+    }
 
     public String getValue() {
         return value;
