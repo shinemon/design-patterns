@@ -6,14 +6,19 @@ public class Singleton {
 
     private String value;
 
-    private Singleton(){
+    private Singleton(){}
 
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
     }
 
     public static Singleton getInstance(){
         if (INSTANCE == null)
             INSTANCE = new Singleton();
-
         return INSTANCE;
     }
 }
