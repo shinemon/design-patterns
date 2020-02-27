@@ -17,6 +17,10 @@ public class AbstractFactoryTest {
 
         Assert.assertEquals( "Meow", cat.getSound());
         Assert.assertEquals( "Quack", duck.getSound());
+    }
 
+    @Test
+    public void appTest(){
+        App.main(new String[] {});
     }
 }
