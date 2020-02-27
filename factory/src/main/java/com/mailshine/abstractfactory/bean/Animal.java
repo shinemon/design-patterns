@@ -1,4 +1,4 @@
-package com.mailshine.abstractfactory;
+package com.mailshine.abstractfactory.bean;
 
 public interface Animal {
 

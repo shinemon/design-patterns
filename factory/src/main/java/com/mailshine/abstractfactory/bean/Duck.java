@@ -1,4 +1,6 @@
-package com.mailshine.abstractfactory;
+package com.mailshine.abstractfactory.bean;
+
+import com.mailshine.abstractfactory.bean.Animal;
 
 public class Duck implements Animal {
     private String sound;
