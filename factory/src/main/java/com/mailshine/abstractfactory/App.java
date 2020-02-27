@@ -8,11 +8,25 @@ import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * The type App.
+ */
 public class App {
     private static final Logger logger = LoggerFactory.getLogger(App.class);
+    /**
+     * The constant ANIMAL_IS_CREATED_WITH_SOUND.
+     */
     public static final String ANIMAL_IS_CREATED_WITH_SOUND = "Animal is created with sound :: ";
+    /**
+     * The constant THE_CLASS_USED_WAS.
+     */
     public static final String THE_CLASS_USED_WAS = ". The Class used was :: ";
 
+    /**
+     * Main.
+     *
+     * @param args the args
+     */
     public static void main(String[] args){
         BasicConfigurator.configure();
 
