@@ -6,6 +6,7 @@
     <modules>
         <module>singleton</module>
         <module>factory</module>
+        <module>builder</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
