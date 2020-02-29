@@ -2,12 +2,22 @@ package com.mailshine.prototype;
 
 public final class Location {
 
+    private String library;
     private String aisle;
     private String section;
 
-    public Location(String aisle, String section){
+    public Location(String library, String aisle, String section){
+        this.library = library;
         this.aisle = aisle;
         this.section =  section;
+    }
+
+    public String getLibrary() {
+        return library;
+    }
+
+    public void setLibrary(String library) {
+        this.library = library;
     }
 
     public String getAisle() {
