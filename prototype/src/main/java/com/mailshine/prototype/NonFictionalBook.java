@@ -16,7 +16,8 @@ public class NonFictionalBook extends Book {
 
     @Override
     public Book copy() {
-        //todo
-        return null;
+        NonFictionalBook nonFictionalBookClone = new NonFictionalBook(this.getName(), this.getAuthor());
+        nonFictionalBookClone.setLocation(this.getLocation());
+        return nonFictionalBookClone;
     }
 }
