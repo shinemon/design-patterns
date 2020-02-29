@@ -18,6 +18,9 @@ public class PrototypeTest {
         Assert.assertEquals(location, fictionalBook.getLocation());
         Assert.assertEquals(anotherLocation, anotherFictionalBook.getLocation());
 
+        Assert.assertEquals(fictionalBook.getName(), anotherFictionalBook.getName());
+        Assert.assertEquals(fictionalBook.getAuthor(), anotherFictionalBook.getAuthor());
+
     }
 
     @Test
@@ -33,5 +36,7 @@ public class PrototypeTest {
         Assert.assertEquals(location, nonFictionalBook.getLocation());
         Assert.assertEquals(anotherLocation, anotherNonFictionalBook.getLocation());
 
+        Assert.assertEquals(nonFictionalBook.getName(), anotherNonFictionalBook.getName());
+        Assert.assertEquals(nonFictionalBook.getAuthor(), anotherNonFictionalBook.getAuthor());
     }
 }
