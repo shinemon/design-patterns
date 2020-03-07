@@ -19,17 +19,16 @@ public class App {
     public static void main(String[] args){
         BasicConfigurator.configure();
 
-        Employee employee = new Employee.EmployeeBuilder("TestID1", "Test Name")
+        Employee employee = new Employee.EmployeeBuilder()
+                .id("TestID1")
+                .name("Test Name")
+                .age(20)
+                .department("Dept")
+                .locationAddress("Location")
                 .build();
         logger.info("Created Employee with ID: "+ employee.getId());
+        logger.info(employee.getId() + "'s age is " +  employee.getAge());
 
-        Employee employeeWithOptionalParameters = new Employee.EmployeeBuilder("TestID2", "Test Name2")
-                .setAge(25)
-                .setDepartment("Software Engineering")
-                .setLocationAddress("Location Address 1")
-                .build();
-        logger.info("Created Employee with ID: "+ employeeWithOptionalParameters.getId());
-        logger.info(employeeWithOptionalParameters.getId() + "  " + "belongs to Department " + employeeWithOptionalParameters.getDepartment());
 
     }
 }
