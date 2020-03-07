@@ -1,4 +1,4 @@
-package com.mailshine.builder.with.boilerplatecode;
+package com.mailshine.builder.without.boilerplatecode;
 
 import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
