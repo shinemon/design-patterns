@@ -8,6 +8,7 @@
         <module>factory</module>
         <module>builder</module>
         <module>prototype</module>
+        <module>adapter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
