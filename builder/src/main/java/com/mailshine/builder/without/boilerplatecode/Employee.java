@@ -17,7 +17,7 @@ public class Employee {
     //optional
     private int age;
     private String department;
-    private String locationAddress;
+    @Builder.Default private String locationAddress = "Office One, 1 Main St.";
 
 
 }
