@@ -19,4 +19,14 @@ public class BuilderPatternJunitTest {
         Assert.assertNotNull(employee.getDepartment());
         Assert.assertNotNull(employee.getLocationAddress());
     }
+
+    @Test
+    public void builderTest3() {
+        Employee employee = new Employee.EmployeeBuilder()
+                .id("TestID1")
+                .name("Test Name")
+                .age(20)
+                .build();
+        Assert.assertEquals("Office One, 1 Main St.", employee.getLocationAddress());
+    }
 }
